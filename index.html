@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melting-pots</title>
+    <!-- On évite le titre en majuscules, et il faut essayer d'être explicite sur le contenu-->
+
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900;600;500&display=swap" rel="stylesheet">
+    <!-- Google-font vous fournit le lien tout beau tout fait.-->
+
+</head>
+
+<body>
+
+    <header class="container">
+        <!-- <a href="index.html"><img src="images/logo1.png" height="100" alt="Logo" class="logo"> -->
+        <!-- On attribue la classe container au <header> puis via le CSS on vient lui donner une largeur maximum (max-width), puis on le centre grâce au (margin : 0 auto;)
+Nous n'aurons plus qu'à appliquer cette classe à toutes les sections qui en auront besoins (Toutes sauf celles avec la photo du lion).   . -->
+        <ul class="menu">
+            <!-- Techniquement nous n'avons qu'une seule balise <ul>, nous ne sommes pas obligé de mettre une classe. Mais dans le cas ou nous en mettons une autre plus tard, on prend le reflexe de lui donner une class.-->
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galeries.html">Galerie Femme</a></li>
+            <li><a href="galerieshom.html"> Galeries Homme</a></li>
+            <li><a href="formulaire.html"> Contact </a></li>
+           
+        </ul>
+        
+        <div class="banner">
+           
+            <div class="left">
+                <h1>Melting-pots, toute la différence!</h1>
+
+                <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar.
+                    Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus
+                    sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet
+                    pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien.
+                    Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis
+                    vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique
+                    ligula justo vitae magna.</p>
+
+                <button type="button" >Allez plus loin</button>
+                <!-- Je n'oublie pas de lui attribuer la valeur button ( je sais que c'est bizarre ) -->
+            </div>
+
+            <div class="right">
+                <img src="images/fond.jpeg" alt="Une femme" srcset="">
+                <!-- ! Attention au poids de vos images, le référencement toussa toussa ! ( je vous ai délibérément envoyé des images par discord très très lourde ) Compressez-les !-->
+                <!-- Pensez bien aux "alt" -->
+            </div>
+
+        </div>
+
+    </header>
+    <!-- On englobe le menu et la banner dans le header, que l'on peut considérer comme une <section> mais en haut de page. -->
+
+
+
+
+    <!------------------------ ABOUT ---------------------------->
+
+
+    <section class="about">
+
+        <h2><span>.</span> A propos</h2>
+        <p class="container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At placeat, temporibus ab possimus quia quasi maxime error debitis assumenda cumque quo sequi, architecto impedit! Est facere iure nobis cumque voluptatem.Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. At placeat, temporibus ab possimus quia quasi maxime error debitis assumenda cumque quo sequi, architecto impedit! Est facere iure nobis cumque voluptatem.</p>
+        <!-- On met la classe container(qui pour rappel nous permet de contrôler la largeur maximum de l'élément), sur la balise afin de contenir sa largeur.
+Nous ne le mettons pas sur la balise de section, car sinon le fond ne serait pas bord à bord, car l'élément ne ferait QUE 1140px ( si ce n'est pas clair, essayez de mettre la classe container après about ;) ).  -->
+
+    </section>
+
+
+    <!------------------------ PORTRAIT ---------------------------->
+
+
+    <section class="portrait container">
+
+        <div class="bloc">
+
+            <div class="left">
+                <img src="images/img6.jpeg" alt="'une  femme  ">
+            </div>
+
+            <div class="right">
+                <h2><span>.</span> Un sous-titre</h2>
+                <!-- Pour mettre le point en jaune, j'ai besoin de le sélectionner précisement je l'entoure donc dans une balise  pour pouvoir le sélectionner dans le CSS -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat laboriosam veritatis, iusto perspiciatis provident sapiente impedit quod, 
+                    nam ex nostrum aut reprehenderit quasi eveniet nisi harum est ipsa velit!</p>
+                <a href="https://checkboxrace.com/">En savoir plus</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!------------------------ LION ---------------------------->
+
+
+    <section class="lion">
+
+        <div class="bloc">
+
+            <div class="left">
+                <h2><span>.</span> Un sous-titre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat laboriosam veritatis, iusto perspiciatis provident sapiente impedit quod, nam ex nostrum aut reprehenderit quasi eveniet nisi harum est ipsa velit!</p>
+                <a href="https://onesquareminesweeper.com/">En savoir plus</a>
+            </div>
+
+            <div class="right">
+                <img src="images/hm.jpeg" alt=" une femme">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Cette section est quasi identique à la précédente, hormis le fait que le texte et l'image soit inversé, et que l'on attribue pas la class container afin que la section prennent toute la largeur de l'écran. -->
+
+    <!------------------------ GALERY ---------------------------->
+
+
+    <section class="galery container">
+        <h2><span>.</span> Galerie</h2>
+        <div class="galery-grid">
+            <img class="item" src="images/img.jpeg" alt="Example image">
+            <img class="item" src="images/img11.jpeg" alt="Example image">
+            <img class="item" src="images/img12.jpeg" alt="Example image">
+            <img class="item" src="images/img23.jpeg" alt="Example image">
+            <img class="item" src="images/img14.jpeg" alt="Example image">
+            <img class="item" src="images/img15.jpeg" alt="Example image">
+            <img class="item" src="images/img26.jpeg" alt="Example image">
+            <img class="item" src="images/img17.jpeg" alt="Example image">
+            <img class="item" src="images/img27.jpeg" alt="Example image">
+            <img class="item" src="images/img28.jpeg" alt="Example image">
+            <img class="item" src="images/img19.jpeg" alt="Example image">
+            <img class="item" src="images/img21.jpeg" alt="Example image">
+        </div>
+    </section>
+
+
+    <!------------------------ SOCIAL-MEDIA --------------------------------->
+
+
+    <section class="social-media container">
+        <h2><span>.</span> Nos reseaux</h2>
+        <div class="media-list">
+            <img src="images/facebook.png" alt="Logo de Facebook">
+            <img src="images/instagram.png" alt="Logo d'Instagram">
+            <img src="images/linkedin.png" alt="Logo de Linkedin">
+            <p>&copy;Sandra MOCHRYSTO 2023</p>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
