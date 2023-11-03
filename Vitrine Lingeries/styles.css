@@ -1,0 +1,364 @@
+body {
+    background-color: #151C26;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+
+/* J'ai supprimer le margin en haut de la balise h1 et h2 afin que cela ne fausse 
+pas l'alignement horizontale avec l'image de la banner */
+
+a {
+    color: #FFC700;
+}
+
+span {
+    color: #FFC700;
+}
+
+
+/* Je commence le document par les propriétés communes à l'ensemble de la page 
+( C'est discutable pour le background du body, j'aurait pu le mettre dans le header ) */
+
+
+/*--------------------- CONTAINER -------------------------*/
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* Je crée le style de la classe qui va délimiter le contenu des différentes sections, 
+je lui donne une largeur maximum puis je centre le tout gràce à margin: 0 auto; */
+
+
+/*--------------------- HEADER -------------------------*/
+
+header .menu {
+    display: flex;
+    list-style: none;
+    padding: 20px 0;
+}
+
+
+/* 
+Par défaut les éléments se mettent les uns en dessous des autres,
+ grâce à flexbox, les éléments se mettent les uns à côté des autres.
+je retire les puces grâce à la propriété list-style, je supprime 
+le padding à gauche du menu et rajoute du padding en haut et en bas pour aérer la navigation.
+
+padding : 20px 0;    
+
+C'est l'équivalent de :
+
+padding-top:20px;
+padding-right:0;
+padding-bottom:20px;
+padding-left:0;
+*/
+
+header .menu li {
+    padding-right: 20px;
+}
+
+
+
+/* 
+J'ajoute du padding à la droite de chaque menu de ma liste afin de les espacer.
+*/
+
+header .banner {
+    margin: 200px 0;
+    display: flex;
+}
+
+header .banner .left {
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* 
+Ici j'ai mis flex + column + center, afin d'aligner horizontalemnt le bloc de gauche 
+et de droite 
+*/
+
+header .banner img {
+    max-width: 600px;
+}
+
+
+/* 
+ J'utilise max-width afin de définir une taille maximale à mon image.
+*/
+
+
+/* 
+font-weight : 900; C'est une manière précise d'écrire le gras de la police,
+ contrairement à "bold" par exemple.
+*/
+
+header .left button {
+    padding: 10px 20px;
+    background-color: #FFC700;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+
+/* 
+Un peu de style à mon bouton, je rajoute font-family car parfois 
+la font-family n'est pas prise en compte dans les balises buttons.
+*/
+
+
+/*--------------------- ABOUT -------------------------*/
+
+.about {
+    background-color: #223144;
+    padding: 100px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+/* 
+Je rajoute margin-top:0 pour que le contenu de la section soit bien centré.
+*/
+
+.about p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* 
+Bon le line-height c'est pour modifier la hauteur de la ligne. 
+*/
+
+
+/*--------------------- PORTRAIT -------------------------*/
+
+.portrait {
+    padding: 200px 0;
+}
+
+.portrait .bloc {
+    display: flex;
+}
+
+.portrait .bloc .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.portrait .bloc img {
+    max-width: 500px;
+}
+
+
+/*--------------------- LION -------------------------*/
+
+.lion .bloc img {
+    width: 50vw;
+}
+
+
+/* 
+vw = viewport-width = % DE LA ZONE D'AFFICHAGE. 
+Je n'utilise pas le % car sinon l'image ne se placera pas 
+correctement et cela rajoutera de la complexité dans mon CSS. 
+*/
+
+.lion .bloc {
+    display: flex;
+}
+
+.lion {
+    background-color: #222D3D;
+}
+
+.lion .bloc .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+
+/* 
+Ces quelques lignes me permettent d'aligner horizontalement 
+les éléments de gauche ( h2-p-lien ) avec l'image à droite. 
+*/
+
+
+ 
+
+
+
+
+.galery {
+    padding: 100px 0;
+}
+
+.galery h2 {
+    text-align: center;
+}
+
+.galery-grid {
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+/* 
+ J'active le flex à l'ensemble de la grid puis j'y applique un wrap, 
+afin que les éléments se repartissent sur plusieurs lignes.
+*/
+
+.galery-grid .item {
+    padding: 10px;
+}
+
+
+/* 
+Je définit la bonne taille pour les images.
+*/
+
+.galery-grid img {
+    width: 265px;
+}
+
+
+/* 
+Pour rappel, 1140px est la largeur de mon container, il y a 4 images par lignes.
+ On arrive donc à 285px <---- PADDING INCLUS
+Si je part du principe que mon padding est de 10px ( comme dans l'exemple ) 
+il faudra donc déduire le padding de la largeur de mon image. Donc 10px gauche ET 10px à droite.
+ Ça fait donc 20px en tout. 
+( contenu-padding-border-margin en bas de l'inspecteur )
+*/
+
+
+/*--------------------- MEDIA -------------------------*/
+
+.social-media h2 {
+    text-align: center;
+}
+
+.social-media .media-list {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+
+/* 
+Je dispose les éléments horizontalement grâce à flex, puis je centre le tout.
+*/
+
+.social-media .media-list img {
+    width: 48px;
+    padding: 0 25px;
+}
+
+
+/* 
+Je définit une largeur pour mes images puis je leurs appliques du padding à gauche et
+ à droite.en bas de l'inspecteur )
+*/
+
+.social-media {
+    margin-bottom: 200px;
+}
+
+/*******************************  Formulaire de contact         **********************************/
+
+/* Style inputs, select elements et textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #FFC700;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .content {
+    border-radius: 5px;
+    background-color: #223144;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, 
+  make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

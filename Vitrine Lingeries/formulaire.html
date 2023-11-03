@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact </title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900;600;500&display=swap" rel="stylesheet">
+    <!-- Google-font fournit le lien tout beau tout fait.-->
+
+</head>
+
+<body>
+
+    <header class="container">
+            <!-- <a href="index.html"><img src="images/logo1.png" height="100" alt="Logo" class="logo"> -->
+            <!-- J'attribue la classe container au <header> puis via le CSS je viens lui donner une largeur
+            maximum (max-width), puis je le centre grâce au (margin : 0 auto;)
+           Je n'aurais plus qu'à appliquer cette classe à toutes les sections qui en auront besoins. -->
+            <ul class="menu">
+                <!-- Techniquement je n'ai qu'une seule balise <ul>, je ne suis pas obligée de mettre 
+                    une classe. Mais dans le cas ou j-en mets une autre plus tard, je prends le reflexe
+                     de lui donner une class.-->
+                     
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galeries.html">Galerie Femme</a></li>
+                <li><a href="galerieshom.html"> Galeries Homme</a></li>
+                <li><a href="formulaire.html"> Contact </a></li>
+
+            </ul>
+    </header>
+
+
+    <!-- formulaire de contact -->
+
+    <div class="content">
+        <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nom</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Votre nom..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Prénom</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Votre prénom..">
+                </div>
+            </div>
+           
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Message</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="écrivez ici.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </div
+    
+    <!------------------------ SOCIAL-MEDIA --------------------------------->
+
+
+    <section class="social-media container">
+        <h2><span>.</span> Nos reseaux</h2>
+        <div class="media-list">
+            <img src="images/facebook.png" alt="Logo de Facebook">
+            <img src="images/instagram.png" alt="Logo d'Instagram">
+            <img src="images/linkedin.png" alt="Logo de Linkedin">
+            <p>&copy;Sandra MOCHRYSTO 2023</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

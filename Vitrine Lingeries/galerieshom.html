@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Homme </title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900;600;500&display=swap" rel="stylesheet">
+</head>
+<body>
+     
+    <header class="container">
+        <!-- <a href="index.html"><img src="images/logo1.png" height="100" alt="Logo" class="logo"> -->
+            <!-- J'attribue la classe container au <header> puis via le CSS je viens lui donner une largeur
+            maximum (max-width), puis je le centre grâce au (margin : 0 auto;)
+           Je n'aurais plus qu'à appliquer cette classe à toutes les sections qui en auront besoins. -->
+        <ul class="menu">
+            <!-- Techniquement je n'ai qu'une seule balise <ul>, je ne suis pas obligée de mettre 
+                    une classe. Mais dans le cas ou j-en mets une autre plus tard, je prends le reflexe
+                     de lui donner une class.-->
+
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galeries.html">Galerie Femme</a></li>
+            <li><a href="galerieshom.html">Galeries Homme</a></li>
+            <li><a href="formulaire.html"> Contact </a></li>
+        </ul>
+
+        <div class="banner">
+
+            <div class="left">
+                <h1>La différence est votre force, partagez la avec nous!</h1>
+
+                <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar.
+                    Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus
+                    sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet
+                    pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien.
+                    Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis
+                    vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique
+                    ligula justo vitae magna.</p>
+
+                <button type="button">Allez plus loin</button>
+                <!-- Je n'oublie pas de lui attribuer la valeur button ( je sais que c'est bizarre ) -->
+            </div>
+
+            <div class="right">
+                <img src="images/hm12.jpeg" alt="Un homme" srcset="">
+                <!-- ! Attention au poids des images, le référencement toussa toussa ! à compressez !-->
+                <!-- Je pense bien aux "alt" -->
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="galery container">
+        <h2><span>.</span> Galerie Homme</h2>
+        <div class="galery-grid">
+            <img class="item" src="images/hm.jpeg" alt="Example image">
+            <img class="item" src="images/hm13.jpeg" alt="Example image">
+            <img class="item" src="images/hm2.jpeg" alt="Example image">
+            <img class="item" src="images/hm3.jpeg" alt="Example image">
+            <img class="item" src="images/hm4.jpeg" alt="Example image">
+            <img class="item" src="images/hm5.jpeg" alt="Example image">
+            <img class="item" src="images/hm6.jpeg" alt="Example image">
+            <img class="item" src="images/hm7.jpeg" alt="Example image">
+            <img class="item" src="images/hm8.jpeg" alt="Example image">
+            <img class="item" src="images/hm9.jpeg" alt="Example image">
+            <img class="item" src="images/hm10.jpeg" alt="Example image">
+            <img class="item" src="images/hm11.jpeg" alt="Example image">
+        </div>
+    </section>
+
+
+    <!------------------------ SOCIAL-MEDIA --------------------------------->
+
+
+    <section class="social-media container">
+        <h2><span>.</span> Suivez nous sur nos reseaux</h2>
+        <div class="media-list">
+            <img src="images/facebook.png" alt="Logo de Facebook">
+            <img src="images/instagram.png" alt="Logo d'Instagram">
+            <img src="images/linkedin.png" alt="Logo de Linkedin">
+            <p>&copy;Sandra MOCHRYSTO 2023</p>
+        </div>
+    </section>
+
+</body>
+</html>
